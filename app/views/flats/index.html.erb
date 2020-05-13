@@ -1,0 +1,18 @@
+<h1>All flats</h1>
+<ul>
+  <% @flats.each do |flat| %>
+  <h3><%= flat.name %></h3>
+  <h5><%= flat.address %></h5>
+  <li><%= "🚻 - #{flat.number_of_guests}" %></li>
+  <li><%= "€ - #{flat.price_per_night}" %></li>
+  <li><%=  link_to 'See more', flat_path(flat) %></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<p></p>
+
+<button class="btn btn-warning" value='Add a new flat'>
+  <%= link_to 'Add new flat', new_flat_path%>
+</button>
