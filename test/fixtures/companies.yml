@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+
+two:
+  name: MyString
+  address: MyString
+
+acme:
+  name: Acme Inc.
+  address: 3.14 Pi Street
